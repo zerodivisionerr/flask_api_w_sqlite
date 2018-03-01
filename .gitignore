@@ -1,2 +1,2 @@
-code/__pycache__
-code/*/__pycache__
+.DS_Store
+__pycache__/
