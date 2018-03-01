@@ -17,10 +17,6 @@ api = Api(app)
 
 jwt = JWT(app, authenticate, identity) # create /auth endpoint
 
-@app.before_first_request
-def create_tables():
-    db.create_all()
-
 class Status_Check(Resource):
     def get(self):
         return {'message': 'Ok'}
