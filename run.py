@@ -5,4 +5,4 @@ from db import db
 def create_tables():
     db.create_al()
 
-db.init(app)
+db.init_app(app)
